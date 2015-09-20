@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroupGender">
+    </Component>
+    <Component class="javax.swing.ButtonGroup" name="buttonGroupEditGender">
+    </Component>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="SheepWatch"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" min="-2" pref="1000" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="labUserName" min="-2" pref="888" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+              <Component id="btnLogout" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jTabbedPane1" min="-2" pref="664" max="-2" attributes="0"/>
+              <EmptySpace pref="13" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="labUserName" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
+                  <Component id="btnLogout" alignment="1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JTabbedPane" name="jTabbedPane1">
+      <Properties>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+            <BevelBorder/>
+          </Border>
+        </Property>
+      </Properties>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="tabMap">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Kartoversikt">
+                <Property name="tabTitle" type="java.lang.String" value="Kartoversikt"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="mapKit" alignment="0" min="-2" pref="439" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="labSheepWP" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel17" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnUpdateReports" min="-2" max="-2" attributes="0"/>
+                          <Component id="jScrollPane4" min="-2" pref="352" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="180" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel17" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane4" pref="416" max="32767" attributes="0"/>
+                          <Component id="mapKit" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="labSheepWP" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnUpdateReports" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="150" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel1">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Kart over dine sauer"/>
+              </Properties>
+            </Component>
+            <Component class="org.jdesktop.swingx.JXMapKit" name="mapKit">
+              <Properties>
+                <Property name="defaultProvider" type="org.jdesktop.swingx.JXMapKit$DefaultProviders" editor="org.netbeans.modules.form.editors.EnumEditor">
+                  <Value id="OpenStreetMaps"/>
+                </Property>
+                <Property name="miniMapVisible" type="boolean" value="false"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="mapKit.getMainMap().addMouseMotionListener(new MouseMotionListener() {&#xd;&#xa;    public void mouseMoved(MouseEvent e) {}&#xd;&#xa;    public void mouseDragged(MouseEvent e) {&#xd;&#xa;        labSheepWP.setVisible(false);&#xd;&#xa;        selectedSheep = null;&#xd;&#xa;        updateReportTable(selectedSheep);&#xd;&#xa;    }&#xd;&#xa;    &#xd;&#xa;});&#xd;&#xa;&#xd;&#xa;mapKit.getMainMap().addMouseListener(new MouseListener() {&#xd;&#xa;    public void mousePressed(MouseEvent e) {}&#xd;&#xa;    public void mouseReleased(MouseEvent e) {}&#xd;&#xa;    public void mouseEntered(MouseEvent e) {}&#xd;&#xa;    public void mouseExited(MouseEvent e) {}&#xd;&#xa;&#xd;&#xa;    public void mouseClicked(MouseEvent e) {&#xd;&#xa;        // Getting main map&#xd;&#xa;        JXMapViewer map = mapKit.getMainMap();&#xd;&#xa;        // Creating a label for name and id&#xd;&#xa;        labSheepWP.setVisible(false);&#xd;&#xa;        &#xd;&#xa;        // Setting selected sheep to null&#xd;&#xa;        selectedSheep = null;&#xd;&#xa;        // Checks if the farmer clicked on a sheeps location&#xd;&#xa;        for (int i = 0; i &lt; alSheepList.size(); i++) {&#xd;&#xa;            Sheep s = alSheepList.get(i);&#xd;&#xa;            // Only adds sheeps with registered locations to the map.&#xd;&#xa;            if(s.getLocation().getLatitude() != 0 || s.getLocation().getLongitude() !=0){&#xd;&#xa;                // Convert sheep location to world bitmap&#xd;&#xa;                Point2D gp_pt = map.getTileFactory().geoToPixel(s.getLocation(), map.getZoom());&#xd;&#xa;                // Convert to screen point&#xd;&#xa;                Rectangle rect = map.getViewportBounds();&#xd;&#xa;                Point converted_gp_pt = new Point(((int)gp_pt.getX()-rect.x),&#xd;&#xa;                                                  ((int)gp_pt.getY())-rect.y);&#xd;&#xa;                // Check if the click is close to a sheep&#xd;&#xa;                if(converted_gp_pt.distance(e.getPoint()) &lt; 20) {&#xd;&#xa;                    // Setting this sheep as selected&#xd;&#xa;                    selectedSheep = s;&#xd;&#xa;                    labSheepWP.setText(s.getId() + &quot; - &quot; + s.getName());&#xd;&#xa;                    labSheepWP.setBounds(new Rectangle(converted_gp_pt, labSheepWP.getPreferredSize()));&#xd;&#xa;                    labSheepWP.setVisible(true);&#xd;&#xa;                    break;&#xd;&#xa;                }&#xd;&#xa;            }&#xd;&#xa;        }&#xd;&#xa;        updateReportTable(selectedSheep);&#xd;&#xa;    }&#xd;&#xa;});"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="labSheepWP">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
+                </Property>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.SoftBevelBorderInfo">
+                    <BevelBorder/>
+                  </Border>
+                </Property>
+                <Property name="opaque" type="boolean" value="true"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane4">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tblReports">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="4" rowCount="0">
+                        <Column editable="false" title="Tidspunkt" type="java.lang.String"/>
+                        <Column editable="false" title="ID" type="java.lang.Integer"/>
+                        <Column editable="false" title="Navn" type="java.lang.String"/>
+                        <Column editable="false" title="Status" type="java.lang.String"/>
+                      </Table>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblReportsMousePressed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel17">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Nyeste rapporter fra hver sau"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnUpdateReports">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Oppdater sauerapporter"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnUpdateReportsActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="tabRegisterEditSheep">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Legg til og rediger sauer">
+                <Property name="tabTitle" type="java.lang.String" value="Legg til og rediger sauer"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="registerSheepPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                      <Component id="jSeparator1" min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jScrollPane2" pref="0" max="32767" attributes="0"/>
+                              <Component id="jLabel8" pref="148" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="btnDeleteSheep" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jSeparator3" min="-2" pref="19" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jPanel1" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jSeparator1" max="32767" attributes="0"/>
+                  <Component id="jSeparator3" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jScrollPane2" min="-2" pref="330" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="btnDeleteSheep" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="registerSheepPanel" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="jPanel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="98" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JPanel" name="registerSheepPanel">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="ff" type="rgb"/>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel2" alignment="1" max="32767" attributes="0"/>
+                              <Component id="jSeparator2" alignment="1" max="32767" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jLabel6" max="32767" attributes="0"/>
+                                      <Component id="jLabel5" max="32767" attributes="0"/>
+                                      <Component id="jLabel7" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="rbMale" min="-2" pref="112" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Component id="rbFemale" max="32767" attributes="0"/>
+                                      </Group>
+                                      <Component id="jScrollPane1" alignment="1" max="32767" attributes="0"/>
+                                      <Component id="dateBday" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Component id="jLabel4" max="32767" attributes="0"/>
+                                      <Component id="jLabel3" pref="70" max="32767" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtName" max="32767" attributes="0"/>
+                                      <Component id="txtWeight" max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Component id="labMessage" alignment="1" max="32767" attributes="0"/>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <Component id="btnRegisterSheep" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator2" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel4" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtWeight" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rbMale" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rbFemale" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="dateBday" max="32767" attributes="0"/>
+                              <Component id="jLabel6" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="labMessage" min="-2" pref="18" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnRegisterSheep" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace pref="29" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel2">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vennligst skriv inn registreringsinformasjonen for sauen."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator2">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel3">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Navn:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtName">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel4">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vekt:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtWeight">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel5">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Kj&#xf8;nn:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rbMale">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="buttonGroupGender"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="V&#xe6;r"/>
+                    <Property name="name" type="java.lang.String" value="rbMale" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rbFemale">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="buttonGroupGender"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="S&#xf8;ye"/>
+                    <Property name="name" type="java.lang.String" value="rbFemale" noResource="true"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel6">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="F&#xf8;dselsdato:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel7">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Helse:"/>
+                  </Properties>
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="txtHealth">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="labMessage">
+                </Component>
+                <Component class="javax.swing.JButton" name="btnRegisterSheep">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bekreft registrering"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRegisterSheepActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="com.michaelbaranov.microba.calendar.DatePicker" name="dateBday">
+                  <Properties>
+                    <Property name="date" type="java.util.Date" editor="org.netbeans.beaninfo.editors.DateEditor">
+                      <SerializedValue value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,117,116,105,108,46,68,97,116,101,104,106,-127,1,75,89,116,25,3,0,0,120,112,119,8,0,0,1,66,35,-106,-31,-128,120"/>
+                    </Property>
+                  </Properties>
+                  <AuxValues>
+                    <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="try{&#xd;&#xa;    Date now = Calendar.getInstance().getTime();&#xd;&#xa;    Date initBDayDate = new Date();&#xd;&#xa;    initBDayDate.setDate(now.getDate());&#xd;&#xa;    initBDayDate.setMonth(now.getMonth());&#xd;&#xa;    initBDayDate.setYear(now.getYear());&#xd;&#xa;    dateBday.setDate(initBDayDate);&#xd;&#xa;}catch(PropertyVetoException e){&#xd;&#xa;&#xd;&#xa;}"/>
+                  </AuxValues>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSeparator" name="jSeparator1">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel8">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="14" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Mine sauer"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="lstSheepList">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="dlmSheepList" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="lstSheepListValueChanged"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JSeparator" name="jSeparator3">
+              <Properties>
+                <Property name="orientation" type="int" value="1"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JPanel" name="jPanel1">
+              <Properties>
+                <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                    <LineBorder/>
+                  </Border>
+                </Property>
+              </Properties>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jSeparator4" max="32767" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="labEditSheepDday" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel13" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel12" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel11" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel10" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel16" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Component id="btnEditSheepConfirm" min="-2" max="-2" attributes="0"/>
+                                                  <Group type="102" alignment="1" attributes="0">
+                                                      <Component id="rbEditSheepMale" min="-2" pref="119" max="-2" attributes="0"/>
+                                                      <EmptySpace min="-2" pref="131" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="txtEditSheepId" pref="244" max="32767" attributes="0"/>
+                                                      <Component id="txtEditSheepName" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="txtEditSheepWeight" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="jScrollPane3" alignment="0" min="-2" pref="244" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                                  <Component id="rbEditSheepFemale" alignment="1" min="-2" pref="119" max="-2" attributes="0"/>
+                                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="dateEditSheepBday" alignment="0" pref="244" max="32767" attributes="0"/>
+                                                      <Component id="dateEditSheepDday" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                              </Group>
+                                              <Component id="labEditSheepMessage" alignment="0" min="-2" pref="244" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                      <Component id="jLabel9" alignment="0" min="-2" pref="326" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="0" pref="107" max="32767" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="jSeparator4" min="-2" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel10" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEditSheepId" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEditSheepName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEditSheepWeight" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rbEditSheepMale" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="rbEditSheepFemale" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="dateEditSheepBday" max="32767" attributes="0"/>
+                              <Component id="jLabel14" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="dateEditSheepDday" max="32767" attributes="0"/>
+                              <Component id="labEditSheepDday" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace pref="40" max="32767" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jScrollPane3" min="-2" pref="141" max="-2" attributes="0"/>
+                              <Component id="jLabel16" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="labEditSheepMessage" min="-2" pref="20" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="btnEditSheepConfirm" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
+              <SubComponents>
+                <Component class="javax.swing.JLabel" name="jLabel9">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Informasjon om valgt sau."/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JSeparator" name="jSeparator4">
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel10">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Id:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel11">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Navn:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel12">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Vekt:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel13">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Kj&#xf8;nn:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel14">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="F&#xf8;dselsdato:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JLabel" name="jLabel16">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Helse:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtEditSheepId">
+                  <Properties>
+                    <Property name="editable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtEditSheepName">
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtEditSheepWeight">
+                </Component>
+                <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+                  <AuxValues>
+                    <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+                  </AuxValues>
+
+                  <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+                  <SubComponents>
+                    <Component class="javax.swing.JTextArea" name="txtEditSheepHealth">
+                      <Properties>
+                        <Property name="columns" type="int" value="20"/>
+                        <Property name="rows" type="int" value="5"/>
+                      </Properties>
+                    </Component>
+                  </SubComponents>
+                </Container>
+                <Component class="javax.swing.JLabel" name="labEditSheepMessage">
+                </Component>
+                <Component class="javax.swing.JButton" name="btnEditSheepConfirm">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Bekreft redigering"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditSheepConfirmActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rbEditSheepMale">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="buttonGroupEditGender"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="V&#xe6;r"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JRadioButton" name="rbEditSheepFemale">
+                  <Properties>
+                    <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                      <ComponentRef name="buttonGroupEditGender"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="S&#xf8;ye"/>
+                  </Properties>
+                </Component>
+                <Component class="com.michaelbaranov.microba.calendar.DatePicker" name="dateEditSheepBday">
+                </Component>
+                <Component class="javax.swing.JLabel" name="labEditSheepDday">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="D&#xf8;dsdato:"/>
+                  </Properties>
+                </Component>
+                <Component class="com.michaelbaranov.microba.calendar.DatePicker" name="dateEditSheepDday">
+                  <Properties>
+                    <Property name="fieldEditable" type="boolean" value="false"/>
+                  </Properties>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JButton" name="btnDeleteSheep">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Slett sau"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDeleteSheepActionPerformed"/>
+              </Events>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="tabEditFarmer">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Rediger bonde og n&#xf8;dkontakt">
+                <Property name="tabTitle" type="java.lang.String" value="Rediger bonde og n&#xf8;dkontakt"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Group type="102" alignment="1" attributes="0">
+                                                  <Component id="cityLabel" min="-2" pref="105" max="-2" attributes="0"/>
+                                                  <EmptySpace max="-2" attributes="0"/>
+                                                  <Component id="txtEditFarmerCity" min="-2" pref="250" max="-2" attributes="0"/>
+                                              </Group>
+                                              <Group type="102" alignment="0" attributes="0">
+                                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                                      <Component id="newPassField2" pref="105" max="32767" attributes="0"/>
+                                                      <Component id="newPassLabel" alignment="0" max="32767" attributes="0"/>
+                                                      <Component id="newPassLabe2l" alignment="0" max="32767" attributes="0"/>
+                                                  </Group>
+                                                  <Group type="103" groupAlignment="0" attributes="0">
+                                                      <Group type="102" alignment="0" attributes="0">
+                                                          <EmptySpace max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" attributes="0">
+                                                              <Component id="txtEditFarmerNewpassword1" max="32767" attributes="0"/>
+                                                              <Component id="txtEditFarmerNewpassword2" max="32767" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                      <Group type="102" alignment="1" attributes="0">
+                                                          <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                              <Component id="btnEditFarmerConfirm" alignment="1" min="-2" max="-2" attributes="0"/>
+                                                              <Component id="txtEditFarmerOldPassword" pref="250" max="32767" attributes="0"/>
+                                                              <Component id="labEditFarmerMessage" alignment="0" max="32767" attributes="0"/>
+                                                          </Group>
+                                                      </Group>
+                                                  </Group>
+                                              </Group>
+                                          </Group>
+                                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="infoLabel2" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="nameLabel" max="32767" attributes="0"/>
+                                              <Component id="mailLabel" max="32767" attributes="0"/>
+                                              <Component id="phoneLabel" pref="105" max="32767" attributes="0"/>
+                                              <Component id="addressLabel" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="postnrLabel" alignment="1" min="-2" pref="105" max="-2" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="0" attributes="0">
+                                              <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtEditFarmerPostnr" pref="250" max="32767" attributes="0"/>
+                                                  <Component id="txtEditFarmerAddress" alignment="0" max="32767" attributes="0"/>
+                                              </Group>
+                                              <Component id="txtEditFarmerPhone" alignment="1" min="-2" pref="250" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="txtEditFarmerEmail" max="32767" attributes="0"/>
+                                          <Component id="txtEditFarmerName" max="32767" attributes="0"/>
+                                      </Group>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Component id="infoLabel3" max="32767" attributes="0"/>
+                                      <EmptySpace pref="494" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="contactNameLabel" min="-2" pref="100" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="txtEditContactName" pref="285" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                                          <Component id="mapKitEditFarm" alignment="0" max="32767" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="contactMailLabel" max="32767" attributes="0"/>
+                                                  <Component id="contactPhoneLabel" pref="100" max="32767" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                                  <Component id="txtEditContactEmail" pref="285" max="32767" attributes="0"/>
+                                                  <Component id="txtEditContactPhone" max="32767" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="infoLabel1" min="-2" max="-2" attributes="0"/>
+                                      <Component id="topSplit" alignment="0" max="32767" attributes="0"/>
+                                  </Group>
+                                  <Component id="jSeparator5" min="-2" pref="809" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="148" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="infoLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="topSplit" min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="infoLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="infoLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Component id="jSeparator5" min="-2" pref="10" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="nameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="contactNameLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEditFarmerName" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtEditContactName" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="contactMailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditContactEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="mailLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerEmail" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="contactPhoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEditContactPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                              <Component id="phoneLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtEditFarmerPhone" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="addressLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerAddress" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="jLabel18" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="8" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="postnrLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerPostnr" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="cityLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerCity" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="newPassLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerNewpassword1" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="newPassLabe2l" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerNewpassword2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="newPassField2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="txtEditFarmerOldPassword" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="labEditFarmerMessage" min="-2" pref="22" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                              <Component id="btnEditFarmerConfirm" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="mapKitEditFarm" alignment="0" min="-2" pref="340" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="53" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="infoLabel1">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vennligst fyll ut de feltene du vil forandre p&#xe5;, og bekreft med passord."/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="nameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Navn:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="mailLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="E-Post:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="phoneLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Telefonnummer:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="addressLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adresse:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="postnrLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Postnummer:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="cityLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Poststed:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="infoLabel2">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Personlig informasjon:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="infoLabel3">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="N&#xf8;dkontakt:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JSeparator" name="topSplit">
+            </Component>
+            <Component class="javax.swing.JLabel" name="contactNameLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Navn:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="contactMailLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="E-Post:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="contactPhoneLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Telefonnummer:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerName">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerEmail">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerPhone">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerAddress">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerPostnr">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditFarmerCity">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditContactPhone">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditContactEmail">
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtEditContactName">
+            </Component>
+            <Component class="javax.swing.JButton" name="btnEditFarmerConfirm">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Bekreft endringer"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEditFarmerConfirmActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="newPassLabel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Nytt passord:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="newPassLabe2l">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Gjenta passord:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="newPassField2">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Tahoma" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Gammelt passord:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtEditFarmerNewpassword1">
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtEditFarmerNewpassword2">
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="txtEditFarmerOldPassword">
+            </Component>
+            <Component class="javax.swing.JLabel" name="labEditFarmerMessage">
+            </Component>
+            <Component class="javax.swing.JSeparator" name="jSeparator5">
+            </Component>
+            <Component class="org.jdesktop.swingx.JXMapKit" name="mapKitEditFarm">
+              <Properties>
+                <Property name="defaultProvider" type="org.jdesktop.swingx.JXMapKit$DefaultProviders" editor="org.netbeans.modules.form.editors.EnumEditor">
+                  <Value id="OpenStreetMaps"/>
+                </Property>
+                <Property name="miniMapVisible" type="boolean" value="false"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value=" // Create a set of waypoints&#xd;&#xa;Set&lt;Waypoint&gt; waypoints = new HashSet&lt;Waypoint&gt;();&#xd;&#xa;farmPos = currentFarmer.getFarmLocation();&#xd;&#xa;// Creating waypoint at location&#xd;&#xa;Waypoint wp = new SheepWaypoint(currentFarmer.getFarmLocation(), 1);&#xd;&#xa;waypoints.add(wp);&#xd;&#xa;// Getting main map&#xd;&#xa;JXMapViewer map = mapKitEditFarm.getMainMap();&#xd;&#xa;// Create a WaypointPainter to draw the points&#xd;&#xa;WaypointPainter painter = new WaypointPainter();&#xd;&#xa;SheepWaypointRenderer wpRenderer = new SheepWaypointRenderer();&#xd;&#xa;painter.setRenderer(wpRenderer);&#xd;&#xa;painter.setWaypoints(waypoints);&#xd;&#xa;map.setOverlayPainter(painter);&#xd;&#xa;&#xd;&#xa;mapKitEditFarm.getMainMap().addMouseListener(new MouseListener() {&#xd;&#xa;    public void mousePressed(MouseEvent e) {}&#xd;&#xa;    public void mouseReleased(MouseEvent e) {}&#xd;&#xa;    public void mouseEntered(MouseEvent e) {}&#xd;&#xa;    public void mouseExited(MouseEvent e) {}&#xd;&#xa;&#xd;&#xa;    public void mouseClicked(MouseEvent e) {&#xd;&#xa;        // Getting main map&#xd;&#xa;        JXMapViewer map = mapKitEditFarm.getMainMap();&#xd;&#xa;        // Clearing the waypoints&#xd;&#xa;        // map.setOverlayPainter(null);&#xd;&#xa;        &#xd;&#xa;        // Create a set of waypoints&#xd;&#xa;        Set&lt;Waypoint&gt; waypoints = new HashSet&lt;Waypoint&gt;();&#xd;&#xa;        // Convert to screen point&#xd;&#xa;        Rectangle rect = map.getViewportBounds();&#xd;&#xa;        // Getting the screen point clicked&#xd;&#xa;        Point clickedPoint = new Point(e.getPoint().x + rect.x, e.getPoint().y + rect.y);&#xd;&#xa;        Point2D p2d = clickedPoint;&#xd;&#xa;        // Converting to GeoLocation&#xd;&#xa;        farmPos = map.getTileFactory().pixelToGeo(p2d, map.getZoom());&#xd;&#xa;        &#xd;&#xa;        // Creating waypoint at location&#xd;&#xa;        Waypoint wp = new SheepWaypoint(farmPos, 1);&#xd;&#xa;        waypoints.add(wp);&#xd;&#xa;&#xd;&#xa;        // Create a WaypointPainter to draw the points&#xd;&#xa;        WaypointPainter painter = new WaypointPainter();&#xd;&#xa;        SheepWaypointRenderer ren = new SheepWaypointRenderer();&#xd;&#xa;        painter.setRenderer(ren);&#xd;&#xa;        painter.setWaypoints(waypoints);&#xd;&#xa;        map.setOverlayPainter(painter);&#xd;&#xa;    }&#xd;&#xa;});"/>
+              </AuxValues>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel18">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Endre plassering av bondeg&#xe5;rd:"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="tabLog">
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
+              <JTabbedPaneConstraints tabName="Logg">
+                <Property name="tabTitle" type="java.lang.String" value="Logg"/>
+              </JTabbedPaneConstraints>
+            </Constraint>
+          </Constraints>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jScrollPane5" min="-2" pref="513" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="mapKitLog" pref="440" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="dateFrom" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="dateTo" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="102" alignment="1" attributes="0">
+                                          <Component id="jLabel19" min="-2" pref="159" max="-2" attributes="0"/>
+                                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                                          <Component id="jLabel20" min="-2" pref="159" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jScrollPane6" min="-2" pref="159" max="-2" attributes="0"/>
+                                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                                      <Component id="btnRemoveSheepFilter" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="jLabel21" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane6" pref="165" max="32767" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                              <Component id="btnRemoveSheepFilter" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel20" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel19" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="dateFrom" min="-2" max="-2" attributes="0"/>
+                          <Component id="dateTo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="mapKitLog" pref="360" max="32767" attributes="0"/>
+                          <Component id="jScrollPane5" pref="0" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane5">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JTable" name="tblLog">
+                  <Properties>
+                    <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
+                      <Table columnCount="7" rowCount="4">
+                        <Column editable="false" title="Tidspunkt" type="java.lang.String"/>
+                        <Column editable="false" title="ID" type="java.lang.Integer"/>
+                        <Column editable="false" title="Navn" type="java.lang.String"/>
+                        <Column editable="false" title="Lengdegrad" type="java.lang.Float"/>
+                        <Column editable="false" title="Breddegrad" type="java.lang.Float"/>
+                        <Column editable="false" title="Puls" type="java.lang.Integer"/>
+                        <Column editable="false" title="Status" type="java.lang.String"/>
+                      </Table>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tblLogMouseClicked"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="com.michaelbaranov.microba.calendar.DatePicker" name="dateFrom">
+              <Properties>
+                <Property name="date" type="java.util.Date" editor="org.netbeans.beaninfo.editors.DateEditor">
+                  <SerializedValue value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,117,116,105,108,46,68,97,116,101,104,106,-127,1,75,89,116,25,3,0,0,120,112,119,8,0,0,1,66,27,11,97,-128,120"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dateFromActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="com.michaelbaranov.microba.calendar.DatePicker" name="dateTo">
+              <Properties>
+                <Property name="date" type="java.util.Date" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                  <Connection code="Calendar.getInstance().getTime()" type="code"/>
+                </Property>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="dateToActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel19">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Etter dato:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel20">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="F&#xf8;r dato:"/>
+              </Properties>
+            </Component>
+            <Container class="javax.swing.JScrollPane" name="jScrollPane6">
+              <AuxValues>
+                <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+              </AuxValues>
+
+              <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+              <SubComponents>
+                <Component class="javax.swing.JList" name="lstLogSheepSelect">
+                  <Properties>
+                    <Property name="model" type="javax.swing.ListModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+                      <Connection code="dlmSheepList" type="code"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="valueChanged" listener="javax.swing.event.ListSelectionListener" parameters="javax.swing.event.ListSelectionEvent" handler="lstLogSheepSelectValueChanged"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+            </Container>
+            <Component class="javax.swing.JLabel" name="jLabel21">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="SansSerif" size="11" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Filtrer p&#xe5; sau:"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnRemoveSheepFilter">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Fjern filtrering p&#xe5; sau"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnRemoveSheepFilterActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="org.jdesktop.swingx.JXMapKit" name="mapKitLog">
+              <Properties>
+                <Property name="defaultProvider" type="org.jdesktop.swingx.JXMapKit$DefaultProviders" editor="org.netbeans.modules.form.editors.EnumEditor">
+                  <Value id="OpenStreetMaps"/>
+                </Property>
+                <Property name="miniMapVisible" type="boolean" value="false"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_CreateCodePost" type="java.lang.String" value="// Create a set of waypoints&#xd;&#xa;Set&lt;Waypoint&gt; waypointsLog = new HashSet&lt;Waypoint&gt;();&#xd;&#xa;// Creating waypoint at location&#xd;&#xa;Waypoint wpLog = new SheepWaypoint(currentFarmer.getFarmLocation(), 1);&#xd;&#xa;waypointsLog.add(wpLog);&#xd;&#xa;// Getting main map&#xd;&#xa;JXMapViewer mapLog = mapKitLog.getMainMap();&#xd;&#xa;// Create a WaypointPainter to draw the points&#xd;&#xa;WaypointPainter painterLog = new WaypointPainter();&#xd;&#xa;SheepWaypointRenderer wpRendererLog = new SheepWaypointRenderer();&#xd;&#xa;painterLog.setRenderer(wpRendererLog);&#xd;&#xa;painterLog.setWaypoints(waypointsLog);&#xd;&#xa;mapLog.setOverlayPainter(painterLog);"/>
+              </AuxValues>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JLabel" name="labUserName">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="11" style="1"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnLogout">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Logg ut"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnLogoutActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
