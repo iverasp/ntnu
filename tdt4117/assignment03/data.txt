@@ -1,0 +1,194 @@
+# Siden jeg ikke har fiksa latex... :p
+
+Oppgave 2:
+---------------
+
+a: 
+
+Lucene is an open source information retrieval library. At the core of its architecture is an idea of a document containing fields of text. This flexibility allows Lucene's APi to be independent of the document format, thus allowing Lucene to index PDF, html, Word, OpenDocument and other document types, provided that the document contents can be extracted. It allows for full text indexing and search capability and has been widely regocnized for its utility in the implementation of search engines and local, single-site searching.
+
+b:
+
+Console dump:
+
+Indexing to directory 'index'...
+adding C:\Users\myth\Downloads\apple\doc1.txt
+adding C:\Users\myth\Downloads\apple\doc10.txt
+adding C:\Users\myth\Downloads\apple\doc2.txt
+adding C:\Users\myth\Downloads\apple\doc3.txt
+adding C:\Users\myth\Downloads\apple\doc4.txt
+adding C:\Users\myth\Downloads\apple\doc5.txt
+adding C:\Users\myth\Downloads\apple\doc6.txt
+adding C:\Users\myth\Downloads\apple\doc7.txt
+adding C:\Users\myth\Downloads\apple\doc8.txt
+adding C:\Users\myth\Downloads\apple\doc9.txt
+806 total milliseconds
+
+First step is to open a tokenizer stream with the StandardAnalyzer class, specifying a specific version of the parser.
+
+Next, we create a indexwriterconfig in which we state the same version, and pass the tokenizer stream object to it.
+
+Next it decides wether or not to create a brand new index or append to an existing index.
+
+Now we can instantiate an index writer with the path to which the index folder is to be placed, and the config we created earlier.
+
+We now call the indexDocs method with the path to the documents which are going to be indexed, and the indexwriter object.
+
+The indexDocs method firstly does some error checking to see wether the provided file is readable, and if it is a directory,
+opens all documents in the directory by recursively calling itself with each file, otherwise,
+it opens a file input stream on the specified file.
+
+Next we create a new empty document. A document object is the primary unit for indexing and searching, and contains
+a set of fields which uniquely identifies the document, and returns it in search results.
+
+We add the path to the document as a field, with no stop-word removal, positional information or tokenization.
+This is because we want the path to also represent the document in searches, as its indexable.
+
+Next we add a numeric field which contains the last time the document was modified.
+
+Now it is time to add the content itself to the document, so it can be indexed and tokenized, but not stored yet.
+
+Lastly, we chech the config of the writer to see wether we are creating a new index or updating, and call either
+addDocument or updateDocument accordingly.
+
+c:
+
+Console dump:
+
+Enter query: 
+apple
+Searching for: apple
+7 total matching documents
+1. C:\Users\myth\Downloads\apple\doc7.txt
+2. C:\Users\myth\Downloads\apple\doc2.txt
+3. C:\Users\myth\Downloads\apple\doc4.txt
+4. C:\Users\myth\Downloads\apple\doc10.txt
+5. C:\Users\myth\Downloads\apple\doc1.txt
+6. C:\Users\myth\Downloads\apple\doc3.txt
+7. C:\Users\myth\Downloads\apple\doc5.txt
+Press (q)uit or enter number to jump to a page.
+
+Enter query: 
+apple grape
+Searching for: apple grape
+8 total matching documents
+1. C:\Users\myth\Downloads\apple\doc2.txt
+2. C:\Users\myth\Downloads\apple\doc10.txt
+3. C:\Users\myth\Downloads\apple\doc3.txt
+4. C:\Users\myth\Downloads\apple\doc5.txt
+5. C:\Users\myth\Downloads\apple\doc9.txt
+6. C:\Users\myth\Downloads\apple\doc7.txt
+7. C:\Users\myth\Downloads\apple\doc4.txt
+8. C:\Users\myth\Downloads\apple\doc1.txt
+Press (q)uit or enter number to jump to a page.
+
+Enter query: 
+apple grape melon
+Searching for: apple grape melon
+10 total matching documents
+1. C:\Users\myth\Downloads\apple\doc10.txt
+2. C:\Users\myth\Downloads\apple\doc3.txt
+3. C:\Users\myth\Downloads\apple\doc5.txt
+4. C:\Users\myth\Downloads\apple\doc2.txt
+5. C:\Users\myth\Downloads\apple\doc9.txt
+6. C:\Users\myth\Downloads\apple\doc1.txt
+7. C:\Users\myth\Downloads\apple\doc4.txt
+8. C:\Users\myth\Downloads\apple\doc7.txt
+9. C:\Users\myth\Downloads\apple\doc6.txt
+10. C:\Users\myth\Downloads\apple\doc8.txt
+Press (q)uit or enter number to jump to a page.
+
+The query model used here seems to be an "AND"-query, as the number of retrieved documents increase as you expand the query.
+
+Task 3
+----------------
+
+The above code creates a new BooleanQuery and a String tokenizer.
+The input query is then tokenized to apple, apple and grape, and apple, grape and melon.
+Next it creates a term query for the contents field of a document, and then adds the term query to the query object.
+When adding the query it also specifies that these tokens MUST appear in the documents if they are to be retrieved,
+thus it is a boolean AND query.
+
+Console dump from the Occur.MUST run:
+
+Enter query: 
+apple
+Searching for: +apple
+7 total matching documents
+1. C:\Users\myth\Downloads\apple\doc7.txt
+2. C:\Users\myth\Downloads\apple\doc2.txt
+3. C:\Users\myth\Downloads\apple\doc4.txt
+4. C:\Users\myth\Downloads\apple\doc10.txt
+5. C:\Users\myth\Downloads\apple\doc1.txt
+6. C:\Users\myth\Downloads\apple\doc3.txt
+7. C:\Users\myth\Downloads\apple\doc5.txt
+Press (q)uit or enter number to jump to a page.
+
+Enter query: 
+apple grape
+Searching for: +apple +grape
+4 total matching documents
+1. C:\Users\myth\Downloads\apple\doc2.txt
+2. C:\Users\myth\Downloads\apple\doc10.txt
+3. C:\Users\myth\Downloads\apple\doc3.txt
+4. C:\Users\myth\Downloads\apple\doc5.txt
+Press (q)uit or enter number to jump to a page.
+
+Enter query: 
+apple grape melon
+Searching for: +apple +grape +melon
+3 total matching documents
+1. C:\Users\myth\Downloads\apple\doc10.txt
+2. C:\Users\myth\Downloads\apple\doc3.txt
+3. C:\Users\myth\Downloads\apple\doc5.txt
+Press (q)uit or enter number to jump to a page.
+
+Console dump from the Occur.SHOULD run:
+
+Enter query: 
+apple
+Searching for: apple
+7 total matching documents
+1. C:\Users\myth\Downloads\apple\doc7.txt
+2. C:\Users\myth\Downloads\apple\doc2.txt
+3. C:\Users\myth\Downloads\apple\doc4.txt
+4. C:\Users\myth\Downloads\apple\doc10.txt
+5. C:\Users\myth\Downloads\apple\doc1.txt
+6. C:\Users\myth\Downloads\apple\doc3.txt
+7. C:\Users\myth\Downloads\apple\doc5.txt
+Press (q)uit or enter number to jump to a page.
+q
+Enter query: 
+apple grape
+Searching for: apple grape
+8 total matching documents
+1. C:\Users\myth\Downloads\apple\doc2.txt
+2. C:\Users\myth\Downloads\apple\doc10.txt
+3. C:\Users\myth\Downloads\apple\doc3.txt
+4. C:\Users\myth\Downloads\apple\doc5.txt
+5. C:\Users\myth\Downloads\apple\doc9.txt
+6. C:\Users\myth\Downloads\apple\doc7.txt
+7. C:\Users\myth\Downloads\apple\doc4.txt
+8. C:\Users\myth\Downloads\apple\doc1.txt
+Press (q)uit or enter number to jump to a page.
+q
+Enter query: 
+apple grape melon
+Searching for: apple grape melon
+10 total matching documents
+1. C:\Users\myth\Downloads\apple\doc10.txt
+2. C:\Users\myth\Downloads\apple\doc3.txt
+3. C:\Users\myth\Downloads\apple\doc5.txt
+4. C:\Users\myth\Downloads\apple\doc2.txt
+5. C:\Users\myth\Downloads\apple\doc9.txt
+6. C:\Users\myth\Downloads\apple\doc1.txt
+7. C:\Users\myth\Downloads\apple\doc4.txt
+8. C:\Users\myth\Downloads\apple\doc7.txt
+9. C:\Users\myth\Downloads\apple\doc6.txt
+10. C:\Users\myth\Downloads\apple\doc8.txt
+Press (q)uit or enter number to jump to a page.
+
+The results show that the change to the Occur.MUST value, causes the query to be a boolean AND query, and we have
+essentially recreated the initial state of the parser.parse(line) statement and its effect on the search.
+
+
