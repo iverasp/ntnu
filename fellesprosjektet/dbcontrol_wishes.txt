@@ -1,0 +1,44 @@
+Handler methods to be implemented:
+
+
+// AppointmentHandler:
+
+- createAppointment(AppointmentModel): Appointment
+- updateAppointment(AppointmentModel): Appointment
+deleteAppointment(int appointmentId): void
+
+getUserAppointments(String username, int weekNumber): ArrayList<AppointmentModel>
+// updateAlarm(String username, int appointmentId, int alarm)
+
+// UserHandler:
+
+- createUser(UserModel): User
+updateUser(UserModel): User
+checkUserLogin(String username, String password): boolean
+- getUser(String username): UserModel
+getAllUsers(): ArrayList<UserModel> // Used for caching
+
+-updateParticipationStatus(String username, int appointmentId, String status, boolean hidden)
+
+getGroup(String groupname): ArrayList<String> // Users are cached, only the usernames need to be sent
+getGroupHierachy ...
+
+
+// RoomHandler:
+
+-getAllRooms(): ArrayList<RoomModel> // Used for caching
+-getAvailiableRooms(Date startTime, Date endTime): ArrayList<String> // Rooms are cahced, only the roomnumbers need to be sent
+
+isReserved(String roomnumber, Date startTime, Date endTime): boolean
+
+reserveRoom(String roomnumber, int appointmentId): void
+
+//unreserveRoom(String roomnumber, Date startTime, Date endTime): void
+//unreserveRoom(int appointmentId): void
+
+
+// NotificationHandler
+
+createNotification(String username, int appointmentId, String message): void
+getUserNotifications(String username): ArrayList<NotificationModel>
+deleteNotification(int notificationId): void
