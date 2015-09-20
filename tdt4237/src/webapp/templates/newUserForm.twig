@@ -1,0 +1,19 @@
+{% extends 'base.twig' %}
+
+{% block content %}
+
+<h2>New user</h2>
+
+<b>{{ flash.info|raw }}</b> <br />
+<b>{{ flash.error|raw }}</b> <br />
+
+<form action="" method="POST">
+<label>Email: </label>
+<input name="email" required autofocus type="email" value="{{ email|raw }}"> <br />
+<label>Username: </label>
+<input name="user" required type="text" value="{{ username|raw }}"> <br />
+<label>Password: </label>
+<input type="password" name="pass" required> <br />
+<input type="submit" name="submit" value="Create new user">
+</form>
+{% endblock %}
